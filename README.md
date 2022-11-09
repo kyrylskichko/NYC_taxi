@@ -11,9 +11,10 @@ This dataset contains 5 interesting columns, I can work with: ['pickup_datetime'
 1) Removing 'id' column in both datasets and dropping 'dropoff datetime' in train data, because it is result of taxi trip, pickup_datetime + trip_duration = dropoff_datetime.
 2) Replacing (Y, N) with (1, 0) in 'store_and_fwd_flag' dolumn.
 3) Getting distance between pickup and dropoff coordinates, geopsy.distance.geodesic function will help to do it.
-4) Next important step for data preprocessing is converting 'pickup_datetime' column to datetime from string. Let`s analize this column a little bit deeper.
 
-#### 'pickup_datetime'
+## Submissions
 
-Day and time of the week, have an impact on traffic, let`s take a look how!
+First submission is simple regression, the score is 0.56946, actually a poor result. Inputs are: ['vendor_id', 'passenger_count', 'store_and_fwd_flag', 'distance']
 
+
+## Fine-tuning
