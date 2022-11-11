@@ -16,5 +16,6 @@ This dataset contains 5 interesting columns, I can work with: ['pickup_datetime'
 
 First submission is simple regression, the score is 0.56946, actually a poor result. Inputs are: ['vendor_id', 'passenger_count', 'store_and_fwd_flag', 'distance']
 
+Adding a column 'weekday' that contain numbers from 0 to 6, [Monday - Sunday] had a small impact on model. Ther result now is: 0.56035. The column should have impact on model, because weekdays affect traffic jams, so trip ride. The way to improve accuracy - is making a model deeper, for example adding a second layer.
 
 ## Fine-tuning
