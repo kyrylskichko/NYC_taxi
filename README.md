@@ -6,10 +6,12 @@ It is a Kaggle`s "New York City Taxi Trip Duration" challenge solution.
 
 This dataset contains 5 interesting columns, I can work with: ['pickup_datetime', 'pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude'].
 
-### Steps: 
-
+Steps:
 1) Removing 'id' column in both datasets and dropping 'dropoff datetime' in train data, because it is result of taxi trip, pickup_datetime + trip_duration = dropoff_datetime.
 2) Replacing (Y, N) with (1, 0) in 'store_and_fwd_flag' dolumn.
+
+### Let`s take a closer look at latitudes and longitudes we have.
+
 3) Getting distance between pickup and dropoff coordinates, geopsy.distance.geodesic function will help to do it.
 4) Adding a column 'weekday' that contain numbers from 0 to 6, [Monday - Sunday].
 5) Adding a column 'hour' that contain numbers from 0 to 23 [00:00 - 23:00].
