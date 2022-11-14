@@ -12,6 +12,10 @@ Steps:
 
 ### Let`s take a closer look at latitudes and longitudes we have.
 
+![image](https://user-images.githubusercontent.com/84230351/201709196-15218a9e-8123-4c30-a389-19840ffd85ce.png)
+
+As you can see, data has outliers, that should be removed.
+
 3) Getting distance between pickup and dropoff coordinates, geopsy.distance.geodesic function will help to do it.
 4) Adding a column 'weekday' that contain numbers from 0 to 6, [Monday - Sunday].
 5) Adding a column 'hour' that contain numbers from 0 to 23 [00:00 - 23:00].
