@@ -14,7 +14,11 @@ Steps:
 
 ![image](https://user-images.githubusercontent.com/84230351/201709196-15218a9e-8123-4c30-a389-19840ffd85ce.png)
 
-As you can see, data has outliers, that should be removed.
+As you can see, data has outliers, that should be removed. Data, that lies not in [40; 41.5] and [-75; -73] for latitude and longitude respectively has to be dropped.
+Cleared data is way more readable.
+
+![image](https://user-images.githubusercontent.com/84230351/201723842-437e77b0-382e-4547-95ad-543a467bd037.png)
+
 
 3) Getting distance between pickup and dropoff coordinates, geopsy.distance.geodesic function will help to do it.
 4) Adding a column 'weekday' that contain numbers from 0 to 6, [Monday - Sunday].
